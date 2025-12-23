@@ -17,7 +17,7 @@
     }
     
     .card-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Columns for Tablet */
+        grid-template-columns: 1fr; /* Single column for Tablet (Full Width) */
         gap: 1.5rem;
     }
 
@@ -93,7 +93,54 @@
     /* 4. Cards */
     .glass-card {
         padding: 2rem;
-        height: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        column-gap: 2rem;
+        row-gap: 0.5rem;
+        align-items: center;
+        text-align: left;
+    }
+
+    .glass-card .card-icon {
+        margin: 0;
+        grid-column: 1;
+        grid-row: 1 / 3;
+        width: 60px;
+        height: 60px;
+    }
+
+    .glass-card h3 {
+        margin: 0;
+        grid-column: 2;
+        grid-row: 1;
+        align-self: end;
+        font-size: 1.4rem;
+    }
+
+    .glass-card p {
+        margin: 0;
+        grid-column: 2;
+        grid-row: 2;
+        align-self: start;
+        font-size: 1rem;
+        color: var(--text-muted);
+    }
+
+    .click-hint {
+        display: none;
+    }
+
+    .glass-card::after {
+        content: '\f054';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        color: var(--border);
+        font-size: 1.2rem;
+        grid-column: 3;
+        grid-row: 1 / 3;
+        margin-left: auto;
     }
     
     /* 5. Resume & Content */
