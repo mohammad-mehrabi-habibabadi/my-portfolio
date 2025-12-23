@@ -4,6 +4,7 @@
     body {
         font-size: 15px;
         padding-top: 60px;
+        padding-bottom: 160px; /* Increased to prevent footer overlap */
     }
     
     .container {
@@ -250,4 +251,8 @@
     .project-img { height: 220px; }
     .project-content { padding: 1.5rem; }
     
+    /* Fix for home page footer overlap */
+    body.home-page .hero-section {
+        padding-bottom: 180px;
+    }
 }
