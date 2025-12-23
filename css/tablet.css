@@ -1,5 +1,16 @@
 /* --- TABLET SPECIFIC STYLES --- */
 @media (min-width: 768px) and (max-width: 992px) {
+    body {
+        padding-top: 70px;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
     /* 1. Layout & Grid */
     .container {
         padding: 0 2rem;

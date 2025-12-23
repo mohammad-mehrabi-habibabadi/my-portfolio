@@ -3,6 +3,7 @@
     /* 1. Typography & Global */
     body {
         font-size: 15px;
+        padding-top: 60px;
     }
     
     .container {
@@ -12,6 +13,10 @@
     /* 2. Header & Nav */
     header {
         height: 60px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     nav {
