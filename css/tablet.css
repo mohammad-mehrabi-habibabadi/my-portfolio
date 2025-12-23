@@ -1,0 +1,106 @@
+/* --- TABLET SPECIFIC STYLES --- */
+@media (min-width: 768px) and (max-width: 992px) {
+    /* 1. Layout & Grid */
+    .container {
+        padding: 0 2rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns for Tablet */
+        gap: 1.5rem;
+    }
+
+    /* 2. Navigation */
+    .menu-toggle { display: block; }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-height: calc(100vh - 70px);
+        background: var(--bg-menu-gradient);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 3rem 2rem;
+        z-index: 999;
+        overflow-y: auto;
+        gap: 1.5rem;
+        backdrop-filter: blur(var(--menu-blur));
+        -webkit-backdrop-filter: blur(var(--menu-blur));
+        border-bottom: 1px solid var(--border);
+    }
+    
+    .nav-links.active { display: flex; animation: slideInRight 0.3s ease-out; }
+    
+    @keyframes slideInRight {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+    }
+    
+    .nav-links a {
+        font-size: 1.25rem;
+        padding: 1.25rem;
+        width: 100%;
+        text-align: left;
+        border-radius: var(--radius);
+        background: var(--bg-card); /* Changed to card for more solid look */
+        border: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        box-shadow: var(--shadow);
+        margin-bottom: 0;
+    }
+
+    .nav-links a::after {
+        content: '\f054'; /* FontAwesome chevron-right */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    
+    .nav-links a.active {
+        background-color: rgba(37, 99, 235, 0.1);
+        color: var(--primary);
+        border-color: var(--primary);
+    }
+    
+    /* 3. Hero */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    /* 4. Cards */
+    .glass-card {
+        padding: 2rem;
+        height: 100%;
+    }
+    
+    /* 5. Resume & Content */
+    .resume-layout {
+        grid-template-columns: 1fr; /* Stack sidebar on top or bottom */
+        gap: 2rem;
+    }
+    
+    .resume-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Split sidebar info into 2 cols */
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        position: static;
+    }
+    
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+    .project-img { height: 300px; }
+}

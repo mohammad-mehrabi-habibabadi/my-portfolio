@@ -1,0 +1,45 @@
+/* --- DESKTOP SPECIFIC STYLES --- */
+@media (min-width: 993px) {
+    /* Hover Effects that are not relevant on touch */
+    .glass-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-hover);
+        border-color: var(--primary);
+    }
+
+    .glass-card:hover .card-icon {
+        background: var(--primary);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .glass-card:hover .click-hint {
+        opacity: 1;
+        color: var(--primary);
+    }
+
+    .timeline-item:hover { box-shadow: var(--shadow-hover); }
+
+    .project-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+
+    .btn-back { display: none; }
+
+    details.pub-card:hover { border-color: var(--primary); }
+
+    .nav-links a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: var(--primary);
+        transition: width 0.3s;
+    }
+    .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+    
+    .social-icons a:hover {
+        color: var(--primary);
+        transform: translateY(-3px);
+    }
+}
