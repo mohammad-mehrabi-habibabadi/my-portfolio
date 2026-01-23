@@ -3,7 +3,7 @@
   
   # Mohammad Mehrabi Habib Abadi
   
-  **Civil Engineering | Business Strategy | Data Science**
+  **Civil Engineering | MBA | Programming**
   
   [![Portfolio](https://img.shields.io/badge/🌐_Visit-My_Online_Portfolio-2563eb?style=for-the-badge&logo=firefox)](https://mohammad-mehrabi-habibabadi.github.io/my-portfolio/index.html)
   
@@ -68,7 +68,7 @@ I am a multidisciplinary professional bridging the gap between physical infrastr
 **Comparative Analysis of Surrogate Models in Hydrogeology**
 * **Authors:** Mehrabi Habib Abadi, M., & Raeisi Isa-Abadi, A.
 * **Abstract:** A comprehensive comparative analysis of **Polynomial Chaos Expansion (PCE)**, **Gaussian Process Regression (GPR)**, and **Neural Networks** for hydraulic head prediction in heterogeneous aquifers.
-* **Methodology:** Utilized **Genetic Algorithms (GA)** for topology optimization and generated 1500 high-fidelity samples via **COMSOL Multiphysics** parametric sweeps for training in **MATLAB**.
+* **Methodology:** Developed a novel two-stage framework utilizing **Genetic Algorithms (GA)** for topology optimization and **Sobol sequences** for high-fidelity parametric sampling in **COMSOL Multiphysics**, ensuring robust model training in **MATLAB**.
 
 ### **Conference Proceedings (2018)**
 **1. Dynamic analysis of bridge with and without considering the effect of pile**
